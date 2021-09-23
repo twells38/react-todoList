@@ -1,13 +1,18 @@
-body {
+/* --*--this is a common technique called a css reset. 
+    different browser use different default margins
+    causing sites to look different bt margins. 
+    The * means all elements so we are setting all element to have
+    zero margins and zero padding, thus making them look the 
+    same in browser**/
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
+html,
+body {
+  background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);
+  font-size: 1.1rem;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  height: 100;
 }
